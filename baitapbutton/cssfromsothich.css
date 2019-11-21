@@ -1,0 +1,21 @@
+#fromsothich {
+    height: 90px;
+    width: 270px;
+    color: #ff402f;
+
+}
+#body{
+    background: #f9ff9b;
+    width: 310px;
+    height: 390px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding-left: 10px;
+
+}
+#button{
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
