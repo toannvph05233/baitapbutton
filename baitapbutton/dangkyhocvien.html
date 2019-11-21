@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="dangkyhocvien.css">
+</head>
+<body>
+<div id="body">
+    <form action="https://demo.codegym.vn/6/registration_form/register.php" method="post">
+    <h1>Đăng ký học viên</h1>
+    Họ và tên :
+        <input name="name" type="text" placeholder="Nhập tên bạn"> <br><br>
+    Ngày sinh :
+        <input name="ngaysinh" type="text" placeholder="Nhập ngày sinh"> <br><br>
+    Giới tính:
+        <input name="gender" type="radio" value="Nam"> Nam -
+        <input name="gender" type="radio" value="Nữ"> Nữ
+        <br><br>
+        <table>
+            <tr>
+                <td>Địa chỉ :</td>
+                <td><textarea cols="35" rows="5" placeholder="Nhập địa chỉ" ></textarea></td>
+            </tr>
+        </table>
+        <br><br>
+     Lớp:
+        <select name="lop" >
+            <option name="lop1">Lớp 5</option>
+            <option name="lop1">Lớp 6</option>
+            <option name="lop1">Lớp 7</option>
+            <option name="lop1">Lớp 8</option>
+        </select>
+        <br><br>
+        Email :
+        <input name="email" type="email" placeholder="Email"><br><br>
+        Số điện thoại:
+        <input name="phone" type="number"placeholder="0123456789"><br><br><br>
+        <div id="button">
+        <input name="submit" type="submit" value="Submit">
+        <input name="reset" type="reset" value="Reset">
+        </div>
+    </form>
+</div>
+</body>
+</html>
