@@ -1,0 +1,38 @@
+h1 {
+    color: #ff7d30;
+    padding-left: 60px;
+}
+.cn{
+    background: #ff7d30;
+}
+.ngaythuong{
+    background: #f9ff9b;
+}
+
+.thubay{
+    background: #2dff1a
+}
+.tienganh{
+    width: 50px;
+    height: 50px;
+    border-spacing: 0px;
+}
+.ngay, td, .ngaythuong,.thubay,.cn{
+    width: 50px;
+    height: 50px;
+    border: 1px solid darkred;
+    text-align: center;
+}
+.sun,.thucn{
+    color: red;
+}
+.sat,.thu7{
+    color: #2dff1a;
+}
+sub{
+    color: #111111;
+}
+table{
+    border: 1px solid darkred;
+
+}
