@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>khai báo và sử dụng biến</title>
+</head>
+<body>
+<button onclick="boiso()"> clink me </button>
+<br>
+
+    <script>
+        var i = 10;
+        var f = 20.5
+        var b = true
+        var s = 'Hà Nội'
+
+        document.write('i = ' + i)
+        document.write('<br/>')
+        document.write('f = ' + f)
+        document.write('<br/>')
+        document.write('b = ' + b)
+        document.write('<br/>')
+        document.write('s = ' + s)
+        document.write("<br>")
+        var width = 20
+        var height = 10
+        var area = width * height
+        document.write('Area = ' + area)
+        
+        function boiso() {
+            var _bs1 = prompt("ban hay nhap so tu 1:");
+            var _bs2 = prompt("ban hay nhap so thu 2:")
+            var _bs = parseInt(_bs1)% parseInt(_bs2);
+            if (_bs != null){
+                document.getElementById("boiso").innerHTML = "so" + _bs2 + " la boi so cua so " + _bs1;
+            }
+            
+        }
+    </script>
+    <div id="boiso">
+
+    </div>
+</body>
+</html>

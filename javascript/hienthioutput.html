@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Output</title>
+    <script src="testnhungjs.js"></script>
+</head>
+<body>
+    <button type="button" onclick="_hello();">Click de hello</button>
+
+
+
+<button type="button" onclick="showMessage();">Click Now</button>
+<script>
+    function showMessage() {
+        alert("Xin chao :D")
+    }
+
+</script>
+
+<div id="messageDiv"></div>
+<button type="button" onclick="showMessage2();">Click Me!</button>
+<script>
+    function showMessage2(){
+        document.getElementById('messageDiv').innerHTML = 'Xin chào!';
+    }
+</script>
+
+
+
+    <button type="button" onclick="_message();">Click me</button>
+    <script>
+        function _message() {
+            document.write("xin chao")
+        }
+    </script>
+
+</body>
+</html>
