@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Điểm trung bình</title>
+</head>
+<body>
+    <button onclick="tinhtb()">Tính điểm trung bình</button> -
+    <button onclick="tinhdof()">Tính độ F</button> -
+    <button onclick="dientichhinhtron()">Tính diện tích hình tròn</button> -
+    <button onclick="chuvihinhtron()">Tính chu vi hình tròn</button>
+    <script>
+        function tinhtb() {
+            var vatly= prompt("nhập điểm môn vật lý :");
+            var hoahoc= prompt("nhập điểm môn hóa học :");
+            var sinhhoc=prompt("nhập điểm môn sinh học :");
+            var diemtb= (parseInt(vatly)+parseInt(hoahoc)+parseInt(sinhhoc))/3;
+            document.write("Điểm trung bình của 3 môn là :" + diemtb);
+        }
+        function tinhdof() {
+            var doC = prompt("nhập độ C :");
+            var doF=((parseInt(doC)-32)*5)/9;
+            document.write("Độ C :" + doC + "Độ F :" + doF);
+        }
+        function dientichhinhtron() {
+            var bankinh=prompt("nhập bán kính hình tròn:");
+            var dientich=(parseInt(bankinh)*parseInt(bankinh))*Math.PI;
+            document.write("Diện tích hình tròn với bán kính :"+bankinh +"là :"+dientich);
+
+        }
+        function chuvihinhtron() {
+            var bankinh=prompt("nhập bán kính hình tròn:");
+            var chuvi=parseInt(bankinh)*Math.PI*2;
+            document.write("Chu vi hình tròn với bán kính :"+bankinh +"là :"+chuvi);
+        }
+
+    </script>
+
+</body>
+</html>
