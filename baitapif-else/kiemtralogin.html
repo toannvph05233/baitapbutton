@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login vào hệ thống</h1>
+    <table>
+        <tr>
+            <td>Nhập User:</td>
+            <td><input type="text" id="user"></td>
+        </tr>
+        <tr>
+            <td>Nhập Password:</td>
+            <td><input type="password" id="password"></td>
+        </tr>
+    </table>
+    <button id="kiemtra" onclick="kiemtra()">Đăng nhập</button>
+    <div id="hienthi"></div>
+    <script>
+        function kiemtra() {
+            var chuoi=document.getElementById("user").value;
+            var password=document.getElementById("password").value;
+            if(chuoi == "Admin"){
+                if (password == "TheMaster"){
+                    document.getElementById("hienthi").innerHTML ="Welcome";
+                } else {
+                    if (password == null){
+                        document.getElementById("hienthi").innerHTML ="Canceled";
+                    } else document.getElementById("hienthi").innerHTML ="Wrong password";
+                }
+            } else {
+                if (chuoi==null){
+                    document.getElementById("hienthi").innerHTML ="canceld";
+                } else document.getElementById("hienthi").innerHTML ="I don’t know you";
+            }
+
+        }
+    </script>
+</body>
+</html>
