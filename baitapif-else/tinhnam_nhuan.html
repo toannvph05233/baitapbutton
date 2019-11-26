@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính năm nhuận</title>
+</head>
+<body>
+    <h1>Hãy nhập năm bạn muốn kiểm tra:</h1>
+    <input type="text" id="nhap_nam">
+    <button onclick="kiemtra()" >Kiểm tra</button>
+    <div id="hienthi"></div>
+<script>
+    function kiemtra() {
+        var nam = document.getElementById("nhap_nam").value;
+        var nam2 = parseInt(nam);
+        if (nam2 % 100 ==0) {
+            if (nam2 / 400==0) {
+                document.getElementById("hienthi").innerHTML = +nam2 + "là năm nhuận";
+            } else {
+                document.getElementById("hienthi").innerHTML = +nam2 + "là năm không nhuận";
+            }
+        } else if (nam2 % 4==0) {
+            document.getElementById("hienthi").innerHTML = +nam2 + "là năm nhuận";
+        }else {
+            document.getElementById("hienthi").innerHTML = +nam2 + "là năm không nhuận";
+        }
+    }
+</script>
+</body>
+</html>
