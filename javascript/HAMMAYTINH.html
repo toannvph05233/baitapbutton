@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính</title>
+    <link rel="stylesheet" href="cssmaytinh.css">
+</head>
+<body>
+<form id="maytinh">
+<table>
+    <tr>
+        <td colspan="7" id="hienthi" name="hienthi"></td>
+    </tr>
+    <tr>
+        <td><button id="rad">Rad</button> </td>
+        <td><button id="null"></button></td>
+        <td><button id="xchamthan">X!</button></td>
+        <td><button id="mongoac">(</button></td>
+        <td><button id="dongngoac">)</button></td>
+        <td><button id="phantram">%</button></td>
+        <td><button id="ac">AC</button></td>
+    </tr>
+    <tr>
+        <td><button id="inv">Inv</button></td>
+        <td><button id="sin">sin</button></td>
+        <td><button id="in">In</button></td>
+        <td><button onclick="nhapso()" value="7" id="so7">7</button></td>
+        <td><button onclick="nhapso()" value="8"id="so8">8</button></td>
+        <td><button onclick="nhapso()" value="9"id="so9">9</button></td>
+        <td><button id="phepchia">:</button></td>
+    </tr>
+    <tr>
+        <td><button id="chun">n</button></td>
+        <td><button id="cos">cos</button></td>
+        <td><button id="log">log</button></td>
+        <td><button onclick="nhapso()" value="4" id="so4">4</button></td>
+        <td><button onclick="nhapso()" value="5" id="so5">5</button></td>
+        <td><button onclick="nhapso()" value="6" id="so6">6</button></td>
+        <td><button id="phepnhan">X</button></td>
+    </tr>
+    <tr>
+        <td><button id="chue">e</button></td>
+        <td><button id="tan">tan</button></td>
+        <td><button id="chuv">V</button></td>
+        <td><button onclick="nhapso()" id="so1" value="1">1</button></td>
+        <td><button onclick="nhapso()" value="2" id="so2">2</button></td>
+        <td><button onclick="nhapso()" value="3" id="so3">3</button></td>
+        <td><button id="tru">-</button></td>
+    </tr>
+    <tr>
+        <td><button id="ans">Ans</button></td>
+        <td><button id="exp">Exp</button></td>
+        <td><button id="xbinhy">xY</button></td>
+        <td><button onclick="nhapso()" value="0" id="so0">0</button></td>
+        <td><button id="cham">.</button></td>
+        <td><button id="bang">=</button></td>
+        <td><button id="cong">+</button></td>
+    </tr>
+</table>
+</form>
+<script>
+    var so;
+    var chuoi ="";
+    var hienthi=document.forms['maytinh'].name;
+    function nhapso() {
+        so=document.forms['maytinh'].value;
+        chuoi = chuoi + so;
+        hienthi=chuoi;
+    }
+</script>
+</body>
+</html>
