@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DoYouLoveMe</title>
+</head>
+<body>
+    <h1>Do You Love Me ?</h1>
+    <button onclick="dongy()" id="dongy">Yes</button>
+    <button onmouseover="khongdongy()" id="khongdongy" style="position: absolute;">No</button>
+<script>
+    function dongy() {
+        alert("<3");
+    }
+    function khongdongy() {
+        let a=Math.floor (Math.random () * 1000);
+        document.getElementById("khongdongy").style.left = a+"px"  ;
+        console.log(a);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game puzzle</title>
+</head>
+<body>
+<img onclick="chuyendoi1(this.id)" id="img1" src="anh1.jpg" height="250" width="200" alt=""/>
+<img onclick="chuyendoi1(this.id)" id="img2" src="anh2.jpg" height="250" width="200" alt=""/>
+<img onclick="chuyendoi1(this.id)" id="img3" src="anh3.jpg" height="250" width="200" alt =""/>
+<img onclick="chuyendoi1(this.id)" id="img4" src="anh4.jpg" height="250" width="200" alt=""/>
+<button type="button" onclick="ketqua()">nhan</button>
+
+<script>
+    let displayone=document.getElementById("img1").src;
+    let _id;
+    function chuyendoi1(_id) {
+        console.log(displayone);
+        displayone = document.getElementById(_id).src;
+        if (displayone.endsWith("anh1.jpg")) {
+           document.getElementById(_id).src = "anh2.jpg";
+            console.log(displayone);
+        } else {
+            if (displayone.endsWith("anh2.jpg")) {
+                document.getElementById(_id).src = "anh3.jpg";
+                console.log(displayone);
+            } else {
+                if (displayone.endsWith("anh3.jpg")) {
+                    document.getElementById(_id).src = "anh4.jpg";
+                    console.log(displayone);
+                } else
+                    document.getElementById(_id).src = "anh1.jpg";
+                console.log(displayone);
+            }
+        }
+    }
+    let anh1 = document.getElementById("img1").src;
+    let anh2 = document.getElementById("img2").src;
+    let anh3 = document.getElementById("img3").src;
+    let anh4 = document.getElementById("img4").src;
+
+
+    function ketqua() {
+        if (anh1.endsWith("anh1.jpg") && anh2.endsWith("anh1.jpg")&& anh3.endsWith("anh1.jpg") && anh4.endsWith("anh1.jpg")) {
+            alert("you win")
+        }
+        if (anh1.endsWith("anh2.jpg") && anh2.endsWith("anh2.jpg")&& anh3.endsWith("anh2.jpg")&& anh4.endsWith("anh2.jpg")) {
+            alert("you win")
+        }
+        if (anh1.endsWith("anh3.jpg") && anh2.endsWith("anh3.jpg")&& anh3.endsWith("anh3.jpg")&& anh4.endsWith("anh3.jpg")) {
+            alert("you win")
+        }
+        if (anh1.endsWith("anh4.jpg") && anh2.endsWith("anh4.jpg")&& anh3.endsWith("anh4.jpg")&& anh4.endsWith("anh4.jpg")) {
+            alert("you win")
+        }
+    }
+    ketqua();
+
+</script>
+</body>
+</html>

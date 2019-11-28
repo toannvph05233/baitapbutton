@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính cân nặng</title>
+</head>
+<body>
+    <h1>Hãy nhập cân nặng của bạn </h1>
+    Nhập cân nặng :
+    <input type="text" id="nhap_can" value=""> <br>
+    nhập chiều cao :
+    <input type="text" id="nhap_chieucao" value=""><br><br>
+    <button id="kiemtra" onclick="kiemtra()" >Nhấn để kiểm tra</button>
+    <script>
+
+
+        function kiemtra() {
+            let cannang = document.getElementById("nhap_can").value;
+            let chieucao = document.getElementById("nhap_chieucao").value;
+            let ketqua = parseInt(cannang)/(parseInt(chieucao)*parseInt(chieucao));
+            if (ketqua < 18)
+                document.write("Underweight");
+            else if (ketqua < 25.0)
+                document.write("Normal");
+            else if (ketqua < 30.0)
+                document.write("Overweight");
+            else
+                document.write("Obese");
+        }
+    </script>
+</body>
+</html>
