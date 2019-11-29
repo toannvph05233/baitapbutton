@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện Tập 01</title>
+</head>
+<body>
+    <h1>Tính hoa hồng nhận được dựa trên doanh thu</h1>
+    <h3>Nếu doanh thu < 10 triệu ==> hoa hồng nhận được 5% </h3>
+    <h3>Nếu doanh thu >= 10 triệu ==> hoa hồng nhận được 10% </h3>
+    <h3>Nếu doanh thu >= 20 triệu ==> hoa hồng nhận được 20% </h3>
+    <h3>Nếu doanh thu >= 30 triệu ==> hoa hồng nhận được 25% </h3>
+    Hãy nhập doanh thu:
+    <input type="text" id="nhaptien"><br><br>
+    <button onclick="kiemtra()" id="kiemtra">Kiểm tra</button>
+    <div id="hienthi"></div>
+<script>
+    function kiemtra() {
+        let tien = parseInt(document.getElementById("nhaptien").value);
+
+        if (tien >= 30000000){
+            document.getElementById("hienthi").innerHTML = "Tiền hoa hồng của bạn là :" + ((tien/100)*25);
+        } else if (tien >=20000000){
+            document.getElementById("hienthi").innerHTML = "Tiền hoa hồng của bạn là :" + ((tien/100)*20);
+        } else if (tien>=10000000){
+            document.getElementById("hienthi").innerHTML = "Tiền hoa hồng của bạn là :" + ((tien/100)*10);
+        } else document.getElementById("hienthi").innerHTML = "Tiền hoa hồng của bạn là :" + ((tien/100)*5);
+    }
+</script>
+</body>
+</html>

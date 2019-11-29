@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Hãy chọn :</h1>
+        <input onclick="lan1()" type="checkbox" id="checkbox1" value="Good"> Good <br>
+        <input onclick="lan2()" type="checkbox" id="checkbox2" value="Fast"> Fast <br>
+        <input onclick="lan3()" type="checkbox" id="checkbox3" value="Cheap"> Cheap
+    
+    <script>
+            let check1 = document.getElementById("checkbox1").checked;
+            let check2 = document.getElementById("checkbox2").checked;
+            let check3 = document.getElementById("checkbox3").checked;
+            var checklan1=document.getElementById('checkbox1');
+            var checklan2=document.getElementById('checkbox2');
+            var checklan3=document.getElementById('checkbox3');
+       checklan1.onclick=function lan1()
+            {        
+                    document.getElementById("checkbox1").checked = false;
+                    document.getElementById("checkbox2").checked = true;
+                    document.getElementById("checkbox3").checked = true;
+        
+            }
+
+            checklan2.onclick=function lan2()
+            {        
+                    document.getElementById("checkbox1").checked = true;
+                    document.getElementById("checkbox2").checked = false;
+                    document.getElementById("checkbox3").checked = true;
+        
+            }
+            checklan3.onclick=function lan3()
+            {      
+                  document.getElementById("checkbo1").checked = true;  
+                    document.getElementById("checkbox2").checked = true;
+                    document.getElementById("checkbox3").checked = false;
+        
+            }
+
+
+    
+        </script>
+</body>
+</html>

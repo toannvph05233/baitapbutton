@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lãi ngân hàng</title>
+</head>
+<body>
+    <h1>Tính lãi của ngân hàng</h1>
+    <h3>Gửi theo tháng : 0.45%</h3>
+    <h3>Gửi theo Quý : 0.65%</h3>
+    <h3>Gửi theo năm: 0.7%</h3>
+    Nhập tiền:
+    <input type="text" id="nhaptien">
+    <select id="kieugui">
+        <option value="1">1 tháng</option>
+        <option value="2">3 tháng</option>
+        <option value="3">12 tháng</option>
+    </select>
+    <button id="kiemtra" onclick="kiemtra()">Kiểm tra</button>
+    <div id="hienthi"></div>
+<script>
+    function kiemtra() {
+        let tien=parseInt(document.getElementById("nhaptien").value);
+        let thang=parseInt(document.getElementById("kieugui").value);
+        let i =1;
+        let chuoi;
+        let chuoi2="";
+        console.log(thang);
+        for (i=1;i <=12;i++) {
+
+            if (thang == 1) {
+                let lai = (tien / 100) * 0.45;
+                chuoi = (i + " lãi là "+ lai+ "<br> ") ;
+                tien = tien + lai;
+                chuoi2 = chuoi2+ chuoi;
+            } else
+            if (thang == 2) {
+                let lai = (tien / 100) * 0.65;
+                chuoi = (i + " lãi là "+ lai+ "<br> ") ;
+                tien = tien + lai;
+                chuoi2 = chuoi2+ chuoi;
+            } else
+            if (thang == 3) {
+                let lai = (tien / 100) * 0.7;
+                chuoi = (i + " lãi là "+ lai+ "<br> ") ;
+                tien = tien + lai;
+                chuoi2 = chuoi2+ chuoi;
+            }
+            document.getElementById("hienthi").innerHTML=chuoi2;
+        }
+
+    }
+</script>
+</body>
+</html>

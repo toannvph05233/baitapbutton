@@ -6,14 +6,30 @@
 </head>
 <body>
 <h1>Hãy chọn :</h1>
-    <input type="checkbox" id="checkbox1" value="Good"> Good <br>
-    <input type="checkbox" id="checkbox2" value="Fast"> Fast <br>
-    <input type="checkbox" id="checkbox3" value="Cheap"> Cheap
-    <button id="hienthi" onclick="check()">nhấn để xem</button>
+<input onclick="check()" type="checkbox" id="checkbox1" value="Good"> Good <br>
+<input onclick="check()" type="checkbox" id="checkbox2" value="Fast"> Fast <br>
+<input onclick="check()" type="checkbox" id="checkbox3" value="Cheap"> Cheap
+
 <script>
+
     function check() {
-        let chec1 = document.getElementById("checkbox1").onclick;
-        console.log(chec1);
+        let check1 = document.getElementById("checkbox1").checked;
+        let check2 = document.getElementById("checkbox2").checked;
+        let check3 = document.getElementById("checkbox3").checked;
+
+        while (true){
+            if (check1 == false) {
+                document.getElementById("checkbox2").checked = true;
+                document.getElementById("checkbox3").checked = true;
+            } else if (check2 == false) {
+                document.getElementById("checkbox1").checked = true;
+                document.getElementById("checkbox3").checked = true;
+            } else if (check3 ==false ) {
+                document.getElementById("checkbox2").checked = true;
+                document.getElementById("checkbox1").checked = true;
+            }
+        }
+
     }
 </script>
 </body>
