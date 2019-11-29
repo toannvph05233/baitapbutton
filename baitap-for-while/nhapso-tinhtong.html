@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập số tính tổng</title>
+</head>
+<body>
+    <h1>Nhập số bạn muốn</h1>
+    Số nhập là :
+    <input id="nhapso" type="text">
+    <button id="kiemtra" onclick="kiemtra()">Nhấn để xem kết quả</button>
+    <div id="hienthi"></div>
+    <div id="hienthi2"></div>
+
+
+    <script>
+        function kiemtra() {
+            let so=document.getElementById("nhapso").value;
+            let ketqua = 0;
+            for (let i = 0;i<=parseInt(so);i ++){
+                ketqua = ketqua+i;
+                document.getElementById("hienthi").innerHTML+= i ;
+                document.getElementById("hienthi2").innerHTML="Tổng của các số là :" + ketqua ;
+            }
+
+        }
+    </script>
+</body>
+</html>
