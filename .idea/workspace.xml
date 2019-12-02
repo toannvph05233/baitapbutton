@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbb1bc7f-bf40-4145-9b24-615998d348b7" name="Default Changelist" comment="21/11/2019">
-      <change afterPath="$PROJECT_DIR$/anh/google.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testtrenjames/taofrom.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baitap-sukien/good-fast-cheap.html" beforeDir="false" afterPath="$PROJECT_DIR$/baitap-sukien/good-fast-cheap.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +14,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="HTML File" />
       </list>
@@ -43,6 +43,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="HAMMAYTINH.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:49813/johntoan/javascript/HAMMAYTINH.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.HAMMAYTINH.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -57,7 +67,26 @@
       <workItem from="1574226351356" duration="12999000" />
       <workItem from="1574298466144" duration="4280000" />
       <workItem from="1574314084471" duration="15622000" />
-      <workItem from="1574329756048" duration="730000" />
+      <workItem from="1574329756048" duration="975000" />
+      <workItem from="1574346769288" duration="3371000" />
+      <workItem from="1574385385625" duration="7652000" />
+      <workItem from="1574402167023" duration="6174000" />
+      <workItem from="1574607941652" duration="600000" />
+      <workItem from="1574643345849" duration="2394000" />
+      <workItem from="1574664945874" duration="5110000" />
+      <workItem from="1574691811134" duration="5039000" />
+      <workItem from="1574729866915" duration="13157000" />
+      <workItem from="1574817279520" duration="1953000" />
+      <workItem from="1574847451208" duration="1309000" />
+      <workItem from="1574865008278" duration="5363000" />
+      <workItem from="1574902702965" duration="8857000" />
+      <workItem from="1574923307800" duration="11249000" />
+      <workItem from="1574953568959" duration="2359000" />
+      <workItem from="1574991392858" duration="6806000" />
+      <workItem from="1575009117668" duration="12312000" />
+      <workItem from="1575213388815" duration="1824000" />
+      <workItem from="1575248606031" duration="11674000" />
+      <workItem from="1575267687414" duration="7860000" />
     </task>
     <task id="LOCAL-00001" summary="bài tập mới">
       <created>1574328104034</created>
@@ -105,5 +134,17 @@
     <MESSAGE value="bài tập mới" />
     <MESSAGE value="21/11/2019" />
     <option name="LAST_COMMIT_MESSAGE" value="21/11/2019" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Luyentap-For/luyentap-02-hinhtamgiac.html</url>
+          <line>25</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

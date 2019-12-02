@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng nhân</title>
+</head>
+<body>
+    <script>
+        let sout, i, j,so,e;
+        sout = "<table border='1' width='300' cellspacing='5' cellpadding='10'>"
+        for (i = 1; i <= 10; i++) {
+            sout = sout + "<tr>";
+            for (j = 1; j <= 10; j++) {
+                so=i*j;
+                sout = sout + "<td>" + i +"x"+j+ "=" + so + "</td>";
+
+            }
+            sout = sout + "</tr>";
+
+        }
+
+        sout = sout + "</table>";
+        document.write(sout);
+
+    </script>
+</body>
+</html>

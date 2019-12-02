@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số nguyên tố</title>
+</head>
+<body>
+    Nhập số giới hạn số nguyên tố:
+    <input id="nhapso" type="text">
+    <button id="kiemtra" onclick="kiemtra()">Kiểm tra</button>
+    <div id="hienthi" ></div>
+
+<script>
+    let i,j,so,so1="";
+    function kiemtra() {
+        so=parseInt(document.getElementById("nhapso").value);
+        for (i=2;i<so;i++){
+            if(kiemtrasont(i)==true){
+                so1+=i+";";
+
+            }
+        } document.getElementById("hienthi").innerHTML = so1;
+    }
+
+    function kiemtrasont(num) {
+        for (j = 2; j < num ; j++) {
+                if (num % j == 0 ) {
+                return false;
+            }
+        }
+        return true;
+    }
+</script>
+</body>
+</html>

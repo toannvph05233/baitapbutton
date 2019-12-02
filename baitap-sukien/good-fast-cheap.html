@@ -16,19 +16,45 @@
         let check1 = document.getElementById("checkbox1").checked;
         let check2 = document.getElementById("checkbox2").checked;
         let check3 = document.getElementById("checkbox3").checked;
+        let cout;
 
-        while (true){
-            if (check1 == false) {
-                document.getElementById("checkbox2").checked = true;
-                document.getElementById("checkbox3").checked = true;
-            } else if (check2 == false) {
-                document.getElementById("checkbox1").checked = true;
-                document.getElementById("checkbox3").checked = true;
-            } else if (check3 ==false ) {
-                document.getElementById("checkbox2").checked = true;
-                document.getElementById("checkbox1").checked = true;
+            if (check1 == true) {
+                if (check2 == true) {
+                    if (check3 == true) {
+                        document.getElementById("checkbox1").checked=false;
+                    }
+                }
+            }
+        if (check1 == true) {
+            if (check2 == false) {
+                if (check3 == true) {
+                    document.getElementById("checkbox1").checked=false;
+                    document.getElementById("checkbox2").checked = true;
+
+                }
             }
         }
+        if (check1 == false) {
+            if (check2 == true) {
+                if (check3 == true) {
+                    document.getElementById("checkbox1").checked = true;
+                    document.getElementById("checkbox3").checked=false;
+
+                }
+            }
+        }
+
+
+            //     document.getElementById("checkbox2").checked = true;
+            //     document.getElementById("checkbox3").checked = true;
+            // } else if (check2 == false) {
+            //     document.getElementById("checkbox1").checked = true;
+            //     document.getElementById("checkbox3").checked = true;
+            // } else if (check3 ==false ) {
+            //     document.getElementById("checkbox2").checked = true;
+            //     document.getElementById("checkbox1").checked = true;
+            // }
+
 
     }
 </script>
