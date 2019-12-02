@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giai thừa</title>
+</head>
+<body>
+    <h1>Tính giai thừa của 1 số</h1>
+    Nhập số giai thừa :
+    <input type="text" id="nhapso">
+    <button id="kiemtra" onclick="kiemtra()">Kết quả</button>
+    <div id="hienthi"></div>
+
+<script>
+    function kiemtra() {
+        let chuoi="",ketqua = 1;
+        let so = parseInt(document.getElementById("nhapso").value);
+        for (let i=1;i<=so;i++){
+            chuoi +=i+"*";
+            ketqua=ketqua*i;
+        }
+        document.getElementById("hienthi").innerHTML = chuoi + " = " + ketqua;
+    }
+
+
+</script>
+</body>
+</html>

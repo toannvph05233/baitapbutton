@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyện tập 01</title>
+</head>
+<body>
+    <script>
+
+        let dem =0,so=1,chuoi=""
+        tong=0;
+        while (dem<30){
+            if (so%7==0){
+                chuoi=so+"<br>";
+                tong+=so;
+                so++;
+                dem++;
+                document.write(chuoi);
+            }
+            so++;
+
+        }
+        document.write("tổng là :" + tong);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SNT</title>
+</head>
+<body>
+    <h1>Hiển thị 20 số Nguyên Tố</h1>
+
+<script>
+    let so1="";
+    let dem=1,i=2;
+
+    while (dem<21) {
+            if (kiemtrasont(i) == true) {
+                document.write(i + " ");
+                dem++;
+                i++;
+            }
+            i++;
+    }
+    function kiemtrasont(num) {
+        for (j = 2; j < num ; j++) {
+            if (num % j == 0 ) {
+                return false;
+            }
+        }   return true;
+
+    }
+</script>
+</body>
+</html>

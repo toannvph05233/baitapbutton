@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game đoán số</title>
+</head>
+<body>
+    <h1>Game đoán số</h1>
+    hãy nhập khoảng đoán số : Từ :
+    <input type="text" id="khoang1">
+    đến :
+    <input type="text" id="khoang2"><br><br>
+    Hãy đoán số của bạn :
+    <input type="text" id="doanso"><br><br>
+    <button id="kiemtra" onclick="kiemtra()">Kiểm tra</button> <br> <br>
+
+    <button id="random" onclick="random1()">Nhấn để nhận giá trị Random </button> <br><br>
+    <div id="hienthi"></div>
+
+    <script>
+
+        let khoang1=0;
+        let khoang2=0;
+        let doanso,random,chuoi;
+
+        function kiemtra() {
+            doanso = parseInt(document.getElementById("doanso").value);
+            if (doanso > random) {
+                document.getElementById("hienthi").innerHTML = "bạn đã chọn số lớn hơn "
+            } else if (doanso < random) {
+                document.getElementById("hienthi").innerHTML = "bạn đã chọn số nhỏ hơn "
+            } else
+                document.getElementById("hienthi").innerHTML = "Chúc mừng bạn đã chiến thắng"
+        }
+
+        function timrandom(a,b) {
+            random = Math.floor(Math.random()*(b-a+1) + a);
+            console.log(random);
+            return random;
+        }
+
+        function random1() {
+            khaong1 = parseInt(document.getElementById("khoang1").value);
+            khoang2 = parseInt(document.getElementById("khoang2").value);
+            timrandom(khoang1,khoang2);
+        }
+    </script>
+</body>
+</html>
