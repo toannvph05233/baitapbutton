@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giá trị lớn nhất</title>
+</head>
+<body>
+    <h1>Tìm giá trị lớn nhất của mảng</h1>
+    Nhập giá trị số cho mảng :
+    <input type="text" id="nhapso">
+    <button id="themvaomang" onclick="themvaomang()">Thêm vào mảng</button>
+    <br><br>
+    <div id="hienthi" ></div>
+
+    <script>
+
+        let mang = new Array(1);
+        let max=0;
+        function themvaomang() {
+            mang.push(document.getElementById("nhapso").value);
+            console.log(mang);
+            for (let i=0;i<mang.length;i++){
+                if (parseInt(max)<parseInt(mang[i])){
+                    max=mang[i];
+                    console.log(mang[i]);
+                } max=max;
+            }
+            document.getElementById("hienthi").innerHTML="số lớn nhất là : " + max;
+        }
+    </script>
+</body>
+</html>

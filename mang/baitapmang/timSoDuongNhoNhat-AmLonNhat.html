@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let mang = new Array(1, -2, 3, -4, 15, 6);
+    let soduong = mang[1];
+    let soam = mang[1];
+
+    function timsoduong() {
+        for (let i = 0;i < mang.length; i++) {
+            if (mang[i] > 0 && mang[i]>soduong) {
+                soduong = mang[i];
+            }
+        }
+        document.write(soduong);
+    }
+    function timsoam() {
+        for (let i = 0;i < mang.length; i++) {
+            if (mang[i] < 0 && mang[i]<soam) {
+                soam = mang[i];
+            }
+        }
+        document.write(soam);
+    }
+    document.write("số dương lớn nhất là :")
+    timsoduong();
+    document.write(" <br> số âm nhỏ nhất là :")
+    timsoam();
+
+
+
+
+
+</script>
+</body>
+</html>

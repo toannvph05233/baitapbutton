@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị mảng</title>
+</head>
+<body>
+    <h1>Hiển thị mảng</h1>
+    Nhập giá trị cho mảng :
+    <input type="text" id="nhapso">
+    <button id="themvaomang" onclick="themvaomang()">Thêm vào mảng</button>
+    <button id="sapxep" onclick="sapxep()">Sắp xếp mảng</button>
+    <br><br>
+    <div id="hienthi"></div>
+
+<script>
+
+    let mang = new Array();
+    function themvaomang() {
+        let print="";
+        let nhapmang = document.getElementById("nhapso").value;
+        mang.push(nhapmang);
+        for (let i=0;i<mang.length;i++){
+            print += mang[i] + ",";
+        }
+        document.getElementById("hienthi").innerHTML=print;
+    }
+    function sapxep() {
+        let print2="";
+        for (let j=0;j<mang.length;j++){
+            if (parseInt(mang[j])%2==0 && parseInt(mang[j+1])%2==0){
+                print2 += mang[j] + "-";
+            }
+            print2 += mang[j] + ":";
+
+        }
+        document.getElementById("hienthi").innerHTML=print2;
+    }
+
+</script>
+</body>
+</html>

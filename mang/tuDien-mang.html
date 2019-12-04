@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<h1>Từ điển</h1>
+Nhập từ tiếng việt :
+<input type="text" id="nhaptiengviet"> <br><br>
+Nhập từ tiếng anh :
+<input type="text" id="nhaptienganh"> <br><br>
+Nhập từ muốn dịch :
+<input type="text" id="dich"><br><br>
+<button id="themvaomang" onclick="themvaomang()">Thêm vào mảng</button>
+<button id="dichmang" onclick="dichmang()">Dịch từ</button>
+<br><br>
+
+<div id="hienthi"></div>
+
+<script>
+
+    let mang1 = new Array();
+    let mang2 = new Array();
+
+    function themvaomang() {
+        let tiengviet = document.getElementById("nhaptiengviet").value;
+        let tienganh = document.getElementById("nhaptienganh").value;
+        mang1.push(tiengviet);
+        mang2.push(tienganh);
+        for (let i = 0; i < mang1.length; i++) {
+            document.getElementById("hienthi").innerHTML = mang1 + "<br>" + mang2;
+        }
+    }
+
+    function dichmang() {
+        let dich = document.getElementById("dich").value;
+        console.log(dich);
+        for (let d = 0; d < mang1.length; d++) {
+            console.log(mang1[d]);
+            if (dich == mang1[d]) {
+                document.getElementById("hienthi").innerHTML = mang2[d];
+            }
+        }
+        for (let j = 0; j < mang2.length; j++) {
+            console.log(mang2[j]);
+            if (dich == mang2[j]) {
+                document.getElementById("hienthi").innerHTML = mang1[j];
+            }
+        }
+    }
+
+</script>
+
+</body>
+</html>

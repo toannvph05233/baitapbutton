@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        let mang=new Array(1,6,8,2,4,10,15,11);
+
+        function sapxep() {
+
+            for (let j = 0; j < mang.length; j++) {
+                for (let i = j + 1; i < mang.length; i++) {
+                    if (mang[i] < mang[j]) {
+                     let min = mang[i];
+                        mang[i] = mang[j];
+                        mang[j] = min;
+                    }
+                }
+            }
+            document.write(mang);
+        }
+        sapxep();
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TÌm phần tử của mảng</title>
+</head>
+<body>
+<h1>Tìm phần tử của mảng</h1>
+Nhập từ để thêm phần tử vào mảng hoặc muốn tìm phần tử mảng : <br><br>
+<input type="text" id="nhapmang">
+<button id="themvaomang" onclick="themvaomang()">Thêm vào mảng</button>
+<button id="kiemtramang" onclick="timkiemmang()">Tìm kiếm mảng</button>
+<br><br>
+
+<div id="hienthi"></div>
+
+<script>
+    let mang = new Array();
+
+    function themvaomang() {
+        let nhap = document.getElementById("nhapmang").value;
+        mang.push(nhap);
+        console.log(mang);
+    }
+
+
+    function timkiemmang() {
+        let timkiem = document.getElementById("nhapmang").value;
+        console.log(timkiem)
+        for (let i = 0; i < mang.length; i++) {
+            if (timkiem == mang[i]) {
+                document.getElementById("hienthi").innerHTML = "từ tìm kiếm có trong mảng ở vị trí " + i;
+            }
+        }
+    }
+</script>
+</body>
+</html>

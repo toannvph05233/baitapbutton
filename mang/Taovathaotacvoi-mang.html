@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thao tác với mảng</title>
+</head>
+<body>
+    <h1>Sample Screen</h1>
+    <input type="text" id="nhapmang">
+    <button id="add" onclick="themvaomang()">Add</button>
+    <button id="display" onclick="displaymang()">Display</button>
+    <br><br>
+    <div id="hienthi"></div>
+<script>
+
+    let mang = [];
+    let hienthi1="";
+    function themvaomang() {
+        mang.push(document.getElementById("nhapmang").value);
+        for (let i=0;i<mang.length;i++){
+            hienthi1 +=mang[i] + "<br>"
+            document.getElementById("hienthi").innerHTML= hienthi1 ;
+        }
+
+    }
+    function displaymang() {
+        mang.pop();
+        document.getElementById("hienthi").innerHTML=mang;
+    }
+
+</script>
+</body>
+</html>
