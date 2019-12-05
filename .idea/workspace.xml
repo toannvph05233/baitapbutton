@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cbb1bc7f-bf40-4145-9b24-615998d348b7" name="Default Changelist" comment="21/11/2019">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baitap-sukien/good-fast-cheap.html" beforeDir="false" afterPath="$PROJECT_DIR$/baitap-sukien/good-fast-cheap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Luyentap-For/luyentap-02-vehinhvuong.html" beforeDir="false" afterPath="$PROJECT_DIR$/Luyentap-For/luyentap-02-vehinhvuong.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +31,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\TOAN\WebstormProjects\johntoan\mang\baitapmang" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -43,12 +48,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="HAMMAYTINH.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:49813/johntoan/javascript/HAMMAYTINH.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.Ban-co-Caro.html">
+    <configuration name="Ban-co-Caro.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:50180/johntoan/mang/baitap-luyentapmang/Ban-co-Caro.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="HAMMAYTINH.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:50180/johntoan/javascript/HAMMAYTINH.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.HAMMAYTINH.html" />
+      <item itemvalue="JavaScript Debug.Ban-co-Caro.html" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.Ban-co-Caro.html" />
         <item itemvalue="JavaScript Debug.HAMMAYTINH.html" />
       </list>
     </recent_temporary>
@@ -86,7 +99,12 @@
       <workItem from="1575009117668" duration="12312000" />
       <workItem from="1575213388815" duration="1824000" />
       <workItem from="1575248606031" duration="11674000" />
-      <workItem from="1575267687414" duration="7860000" />
+      <workItem from="1575267687414" duration="11607000" />
+      <workItem from="1575335039765" duration="15066000" />
+      <workItem from="1575422781312" duration="3053000" />
+      <workItem from="1575442736275" duration="10113000" />
+      <workItem from="1575507876207" duration="7828000" />
+      <workItem from="1575527981688" duration="8035000" />
     </task>
     <task id="LOCAL-00001" summary="bài tập mới">
       <created>1574328104034</created>
@@ -141,8 +159,13 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/Luyentap-For/luyentap-02-hinhtamgiac.html</url>
           <line>25</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/mang/baitap-luyentapmang/Ban-co-Caro.html</url>
+          <line>42</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+    <script>
+        
+        let mang = "nguyen  Van  toan a brrr c 6";
+        let cout =1;
+        function couttu() {
+            for (let i=0;i<mang.length;i++){
+                if (mang[i] == " " && mang[i+1] != " "){
+                    cout++;
+                }
+            }
+            document.write("số từ trong chuỗi :"+mang+"<br>là "+cout);
+        }
+         couttu();
+    </script>
+</body>
+</html>

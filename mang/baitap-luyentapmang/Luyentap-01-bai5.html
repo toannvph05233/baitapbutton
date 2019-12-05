@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+    <script>
+        let mang = "nghuyenvantoan-30-3-1-9-8t";
+        let cout=0;
+        function coutnegative() {
+            for (let i=0;i<mang.length;i++){
+                if (mang[i] == "-" && mang[i+1] >= "0" && mang[i+1] <= "9"){
+                    console.log(mang[i+1]);
+                    cout ++;
+                }
+            }
+            document.write(cout);
+        }
+        coutnegative();
+        
+    </script>
+</body>
+</html>
