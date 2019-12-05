@@ -49,10 +49,49 @@
         } else  {
             mang[x][y] = "O";
         }
+
         vebanco  (10,16);
+        kiemtra(x,y);
+    }
+
+    function kiemtra(xx,yy){
+        console.log("toan");
+        let cout2 =0;
+        for (let i=0;i<10 ;i++){
+                if (mang[i][yy]=="O"){
+                    cout2++;
+                    if (cout2==5){
+                        alert("you Wim");
+                    }
+                }else cout2=0;
+                if (mang[i][yy]=="X"){
+                    cout2++;
+                    if (cout2==5){
+                        alert("you Wim");
+                    }
+                }else cout2=0;
+            }
+
+        for (let j=0;j<16 ;j++){
+            if (mang[xx][j]=="O"){
+                cout2++;
+                if (cout2==5){
+                    alert("you Wim");
+                }
+            }else cout2=0;
+            if (mang[xx][j]=="X"){
+                cout2++;
+                if (cout2==5){
+                    alert("you Wim");
+                }
+            }else cout2=0;
+        }
+
     }
 
     taobanco(10, 16); // khoi tao ban co
+
+
 </script>
 </body>
 </html>
