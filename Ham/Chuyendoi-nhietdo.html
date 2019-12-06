@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi nhiệt độ</title>
+</head>
+<body>
+    <h1>Chuyển đổi nhiệt độ</h1>
+    <h3>Từ độ C sang độ F</h3>
+    Bạn nhập nhiệt độ muốn chuyển đổi :
+    <input type="text" id="doC">
+    <button id="chuyendoi" onclick="chuyendoi()">Chuyển đổi</button>
+    <br>
+    <br>
+    <div id="hienthi"></div>
+
+    <script>
+        function chuyendoi() {
+            let doC = document.getElementById("doC").value;
+            let doF = (doC*1.8) + 32;
+            document.getElementById("hienthi").innerHTML="Bạn đã chuyển từ :" + doC + " độ C sang :" + doF +" độ F"
+        }
+    </script>
+</body>
+</html>

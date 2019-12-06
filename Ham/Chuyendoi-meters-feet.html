@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Chuyển đổi từ Meters sang Feet</h1>
+
+    <h3>Bạn nhập giá trị muốn chuyển đổi :</h3>
+
+    <select id="chuyen-doi">
+        <option value="1">Từ Meters sang Feet</option>
+        <option value="2">Từ Feet sang Meters </option>
+    </select>
+
+    <input type="text" id="giatri">
+    <button id="chuyendoi" onclick="chuyendoi()">Chuyển đổi</button>
+    <br>
+    <br>
+    <div id="hienthi"></div>
+
+<script>
+    function chuyendoi() {
+        if (document.getElementById("chuyen-doi").value == "1"){
+            let meters = document.getElementById("giatri").value;
+            let feet = meters * 3.279 ;
+            document.getElementById("hienthi").innerHTML = "Bạn đã chuyển từ :" + meters + " Meters sang :" + feet + " Feet"
+        } else {
+            let feet = document.getElementById("giatri").value;
+            let meters= feet * 0.305 ;
+            document.getElementById("hienthi").innerHTML = "Bạn đã chuyển từ :" + feet + " Meters sang :" + meters + " Feet"
+        }
+
+    }
+</script>
+</body>
+</html>

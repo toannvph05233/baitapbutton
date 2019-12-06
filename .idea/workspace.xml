@@ -104,7 +104,9 @@
       <workItem from="1575422781312" duration="3053000" />
       <workItem from="1575442736275" duration="10113000" />
       <workItem from="1575507876207" duration="7828000" />
-      <workItem from="1575527981688" duration="11151000" />
+      <workItem from="1575527981688" duration="12535000" />
+      <workItem from="1575548527546" duration="3023000" />
+      <workItem from="1575595342410" duration="18163000" />
     </task>
     <task id="LOCAL-00001" summary="bài tập mới">
       <created>1574328104034</created>
@@ -163,8 +165,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/mang/baitap-luyentapmang/Ban-co-Caro.html</url>
-          <line>42</line>
-          <properties lambdaOrdinal="-1" />
+          <line>43</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
