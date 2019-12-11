@@ -1,0 +1,15 @@
+#iphone {
+    background: #f9ff9b;
+    width: 180px;
+    height: 200px;
+    text-align: center;
+    border:#111111 1px;
+
+
+}#nokia {
+    background: chocolate;
+    width: 180px;
+    height: 200px;
+    text-align: center;
+    border:#111111 1px;
+}

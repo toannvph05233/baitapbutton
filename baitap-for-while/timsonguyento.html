@@ -11,6 +11,7 @@
     <div id="hienthi" ></div>
 
 <script>
+    let a = 3;
     let i,j,so,so1="";
     function kiemtra() {
         so=parseInt(document.getElementById("nhapso").value);
@@ -20,7 +21,9 @@
 
             }
         } document.getElementById("hienthi").innerHTML = so1;
+        console.log(a)
     }
+
 
     function kiemtrasont(num) {
         for (j = 2; j < num ; j++) {

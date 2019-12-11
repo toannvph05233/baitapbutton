@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp Date</title>
+</head>
+<body>
+<script>
+
+    function Date(day, month, year) {
+        this._Day = day;
+        this._Month = month;
+        this._Year = year;
+
+        this.get_Day = function () {
+            return this.day;
+        }
+
+        this.get_Month = function () {
+            return this.month;
+        }
+        this.get_Year = function () {
+            return this.year;
+        }
+        this.set_Day = function (nowday) {
+            this.day = nowday;
+        }
+        this.set_Month = function (newmonth) {
+            this.month = newmonth;
+        }
+        this.set_Year = function (newyear) {
+            this.year=newyear;
+        }
+        this.hienthi = function () {
+            return " ngày : " + this.day + " tháng : " + this.month + " năm : "+ this.year;
+        }
+    }
+
+    let today = new Date();
+    today.set_Day("09");
+    today.set_Month("12");
+    today.set_Year("2019");
+     document.write(today.hienthi());
+
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mô tả điện thoại</title>
+    <script src="Dien_Thoai.js"></script>
+    <link rel="stylesheet" href="Dien_Thoai.css">
+</head>
+<body>
+<div id="iphone">
+    <h1>Iphone</h1>
+    <input type="text" id="hienthiip"><br><br>
+    <button id="guitinip" onclick="guitinnhanip()">Gửi tin</button>
+    <button id="xemtinip" onclick="xemtinnhanip()">Xem tin</button>
+    <br><br>
+    <button id="xempinip" onclick="xempinip()">Xem pin</button>
+    <button id="xacpinip" onclick="xacpinip()">Xạc pin</button>
+</div>
+
+<br><br><br><br>
+
+<div id="nokia">
+    <h1>Nokia</h1>
+    <input type="text" id="hienthinokia"><br><br>
+    <button id="guitinnokia" onclick="guitinnhannokia()">Gửi tin</button>
+    <button id="xemtinnokia" onclick="xemtinnhannokia()">Xem2tin</button>
+    <br><br>
+    <button id="xempinnokia" onclick="xempinnokia()">Xem pin</button>
+    <button id="xacpinnokia" onclick="xacpinnokia()">Xạc pin</button>
+</div>
+
+
+<script>
+    let Iphone = new Apple();
+    let Nokia = new Apple();
+    Iphone.setPin(50);
+    Nokia.setPin(30);
+    let pinnokia = Nokia.getPin();
+    let pinip =Iphone.getPin();
+
+    // function xempinnokia() {
+    //     Nokia.xempin("hienthinokia", Nokia);
+    // }
+    //
+    // function xempinip() {
+    //     Iphone.xempin("hienthiip", Iphone);
+    // }
+    //
+    // function xacpinnokia() {
+    //     Nokia.xacpin(Nokia);
+    // }
+    //
+    // function xacpinip() {
+    //     Iphone.xacpin(Iphone);
+    // }
+
+
+    function guitinnhannokia() {
+        let tinnhan = document.getElementById("hienthinokia").value;
+        Iphone.setHop_Thu_Den(tinnhan);
+        document.getElementById("hienthiip").value = "bạn có 1 tin nhắn";
+        pinnokia--;
+        Nokia.setPin(pinnokia);
+    }
+
+    function xemtinnhanip() {
+        let xemtin = Iphone.getHop_Thu_Den();
+        document.getElementById("hienthiip").value = xemtin;
+        pinip--;
+        Iphone.getPin(pinip);
+    }
+
+    function guitinnhanip() {
+        let tinnhan = document.getElementById("hienthiip").value;
+        Nokia.setHop_Thu_Den(tinnhan);
+        document.getElementById("hienthinokia").value = "bạn có 1 tin nhắn";
+        pinip--;
+        Iphone.getPin(pinip);
+    }
+
+    function xemtinnhannokia() {
+        let xemtin = Nokia.getHop_Thu_Den();
+        document.getElementById("hienthinokia").value = xemtin;
+        pinnokia--;
+        Nokia.setPin(pinnokia);
+    }
+
+    function xempinip() {
+        document.getElementById("hienthiip").value = pinip;
+    }
+
+    function xempinnokia() {
+        document.getElementById("hienthinokia").value = pinnokia;
+    }
+
+    function xacpinip() {
+        pinip++;
+        Iphone.setPin(pinip);
+    }
+
+    function xacpinnokia() {
+        pinnokia ++;
+        Nokia.setPin(pinnokia);
+    }
+
+</script>
+</body>
+</html>

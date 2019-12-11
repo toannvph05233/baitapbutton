@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<script>
+
+    function Temperature(doC, doF, Cavin) {
+        this.do_C = doC;
+        this.do_F = doF;
+        this.do_Cavin = Cavin;
+
+
+        this.getdoC = function () {
+            return this.do_C;
+        }
+        this.getdoF = function () {
+            return this.do_F;
+        }
+        this.getCavin = function () {
+            return this.do_Cavin;
+        }
+        this.setdoC = function (doC) {
+            debugger;
+            this.do_C = doC;
+        }
+        this.setdoF = function (doF) {
+            this.do_F = doF;
+        }
+        this.setdoCavin = function (Cavin) {
+            this.do_Cavin = Cavin;
+        }
+
+        this.Chuyen_C_F = function () {
+            return ((parseInt(this.do_C) * 1.8) + 32);
+        }
+
+        this.Chuyen_C_C = function () {
+            return (parseInt(this.do_C) + 273.15);
+        }
+    }
+
+
+    let Chuyen_Doi_Nhiet_Do = new Temperature();
+    Chuyen_Doi_Nhiet_Do.setdoC(25);
+    let doC1 = Chuyen_Doi_Nhiet_Do.getdoC();
+    document.write(doC1);
+
+</script>
+</body>
+</html>
