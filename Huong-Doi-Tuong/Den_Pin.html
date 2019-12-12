@@ -3,8 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Đèn Pin</title>
+    <script src="js_Den_Pin.js"></script>
 </head>
 <body>
+<h1>Đèn Pin</h1>
+trạng thái đang :
+    <input type="text" id="hienthi">
+    <br><br>
+    <button id="turnOff" onclick="turn_Off()">Turn Off</button>
+    <button id="turnOn" onclick="turn_On()">Turn On</button>
+
+<script>
+    let electriclamp = new Electriclamp(false);
+    let switchButton = new SwitchButton();
+    document.getElementById("hienthi").value = "trạng thái của đèn : " + electriclamp.status_Lamp() ;
+
+    function turn_On() {
+        switchButton.Switch_On(electriclamp);
+        document.getElementById("hienthi").value = "trạng thái của đèn : " + electriclamp.status_Lamp();
+    }
+     function turn_Off() {
+        switchButton.Switch_Off(electriclamp);
+        document.getElementById("hienthi").value = "trạng thái của đèn : " + electriclamp.status_Lamp();
+    }
+
+</script>
 
 </body>
 </html>

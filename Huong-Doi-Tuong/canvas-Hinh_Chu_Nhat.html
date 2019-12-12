@@ -9,11 +9,32 @@
 
 <script>
 
-    let canvas = document.getElementById("canvas_test");
-    let context = canvas.getAttribute("2d");
-    context.fillStyle = "rgba(0,200,0,0.5)";
-    context.fillRect(100, 100, 100, 50);
+    function Rectangle(x, y, c_height, c_width) {
+        this.x = x;
+        this.y = y;
+        this.c_height = c_height;
+        this.c_width = c_width;
 
+        this.ve_rectangle = function () {
+            let canvas = document.getElementById("canvas_test");
+            let context = canvas.getContext("2d");
+            context.fillStyle = "blue";
+            context.fillRect(this.x, this.y, this.c_height, this.c_width);
+        }
+        this.acreage = function () {
+            return (this.c_width * this.c_height);
+        }
+        this.perimeter = function () {
+            return (this.c_width + this.c_height)*2;
+        }
+    }
+
+    let rectangle = new Rectangle(100,100,500,100);
+    rectangle.ve_rectangle();
+    let acreage = rectangle.acreage();
+    let perimeter = rectangle.perimeter();
+
+    alert("diện tích của hình chữ nhật là :" + acreage + " chu vi là :" + perimeter);
 
 </script>
 </body>

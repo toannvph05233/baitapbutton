@@ -14,13 +14,16 @@ function Apple(soluong) {
         alert(this.soluong);
     }
 
+    this.giam = function () {
+        this.soluong--;
+    }
 }
+
 
 function Human(name,gioitinh,cannang) {
     this.name=name;
     this.gioitinh=gioitinh;
     this.cannang = cannang;
-    this.tao_china = new Apple();
 
     this.getname = function () {
         return this.name;
@@ -42,10 +45,9 @@ function Human(name,gioitinh,cannang) {
         this.cannang = cannang;
     }
 
-    this.an_apple = function () {
-        this.tao_china.soluong--;
+    this.an_apple = function (apple) {
+        apple.giam();
         this.cannang++;
-        alert("táo vừa bị ăn 1 -- còn :" + this.tao_china.getsoluong() + "can nang của bạn là :" + this.cannang);
     }
 
 }

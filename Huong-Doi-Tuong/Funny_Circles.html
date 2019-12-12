@@ -5,6 +5,22 @@
     <title>Funny circles</title>
 </head>
 <body>
+    <canvas id="hienthi" width="1500px" height="500px"></canvas>
 
+<script>
+
+    let canvas = document.getElementById("hienthi");
+    let context = canvas.getContext("2d");
+
+
+    let x = Math.floor(Math.random() * (500 - 100) +100);
+    let y = Math.floor(Math.random() * (500 - 100) +100);
+    let r = Math.floor(Math.random() * (100 - 50) +50);
+    console.log(x + "-" + y + "-" + r);
+    context.arc(x,y,r,0,Math.PI*2);
+    context.fillStyle = "blue";
+    context.stroke();
+
+</script>
 </body>
 </html>

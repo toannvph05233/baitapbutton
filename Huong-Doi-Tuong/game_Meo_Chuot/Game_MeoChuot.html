@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jsMeo_Chuot.js"></script>
+</head>
+<body>
+<img id="cat_tom" src="tom.jpg" height="200" width="200"/>
+<img id="mouse_jerry" src="jerry3.jpg" height="100" width="100"/>
+<br>
+<canvas id="hienthi" width="1000" height="500">
+</canvas><br>
+
+<button onclick="Start()">Run</button>
+<button onclick="Set_vi_tri()">Tốc độ</button>
+
+
+<script>
+    let cat = new Cat("Cat",0, 40);
+    let mouse = new Mouse("Rat", 200, true, 10);
+    let gameInterval;
+
+    function redraw_Cat() {
+        cat.runC();
+        let canvas = document.getElementById("hienthi");
+        let context = canvas.getContext("2d");
+        context.clearRect(0 , 0, canvas.width, canvas.height);
+        let img = document.getElementById("cat_tom");
+        context.drawImage(img, cat.get_vi_triC(), 100,200,200);
+    }
+    // function create_Cat() {
+    //     let canvas = document.getElementById("hienthi");
+    //     let context = canvas.getContext("2d");
+    //     let img = document.getElementById("cat_tom");
+    //     context.drawImage(img, 0, 100,200,200);
+    // }
+
+
+    // function create_Mouse() {
+    //     let canvas = document.getElementById("hienthi");
+    //     let context = canvas.getContext("2d");
+    //     let img = document.getElementById("mouse_jerry");
+    //     context.drawImage(img, 200, 200,100,100);
+    //
+    // }
+
+    function redraw_Mouse() {
+        mouse.runM();
+        console.log(mouse.get_vi_triM());
+        let canvas = document.getElementById("hienthi");
+        let context = canvas.getContext("2d");
+        let img = document.getElementById("mouse_jerry");
+        context.drawImage(img, mouse.get_vi_triM(), 300,100,100);
+
+    }
+    function check() {
+        if (cat.get_vi_triC() <= 1000 || mouse.get_vi_triM()<=1000){
+            if (cat.get_vi_triC() >= mouse.get_vi_triM()) {
+                if (cat.eat_mouse(mouse)) {
+                    alert("bố ăn mày rồi con ")
+                    stop();
+                } else {
+                    alert("Chuột chết rồi không ăn được :")
+                    stop();
+                }
+            }
+        }
+        else {
+            alert("không thể bắt được chuột vì nó chạy quá nhanh :");
+            stop();
+        }
+
+    }
+
+    function Set_vi_tri() {
+        cat.set_vi_triC(parseInt(prompt("nhập tốc độ cho mèo :")));
+        mouse.set_vi_triM(parseInt(prompt("nhập tốc độ cho chuột :")));
+    }
+
+    function Run() {
+        redraw_Cat();
+        redraw_Mouse();
+        check();
+    }
+    function Start(){
+        gameInterval = setInterval(Run, 20);
+    }
+
+    function stop() {
+        clearInterval(gameInterval);
+    }
+    
+    // // Khởi tạo ban đầu:
+    // create_Mouse();
+    // create_Cat();
+
+</script>
+</body>
+</html>

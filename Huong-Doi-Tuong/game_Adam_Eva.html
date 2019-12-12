@@ -6,20 +6,31 @@
     <script src="js_Adam_Eva.js"></script>
 </head>
 <body>
-    <button id="adaman">Adam ăn táo</button>
-    <button id="evaan">Eva ăn táo</button>
+    <button id="adaman" onclick="Adamantao()">Adam ăn táo</button>
+    <button id="evaan" onclick="Evaantao()">Eva ăn táo</button>
     <script>
 
         let Adam = new Human("Adame","Nam",100);
         let Eva= new Human("Eva","Nu",99);
         let Apple_china = new Apple();
         Apple_china.tao_apple();
-
+``
         function Adamantao(){
-            Adam.an_apple();
+            if (Apple_china.getsoluong() > 0){
+                Adam.an_apple(Apple_china);
+                alert("can nang của Adam : " +Adam.getcannang());
+            } else {
+                alert("táo hết rồi");
+            }
+
         }
         function Evaantao(){
-            Eva.an_apple();
+            if (Apple_china.getsoluong() > 0){
+            Eva.an_apple(Apple_china);
+            alert("can nang của Eva : " +Eva.getcannang());
+            } else {
+                alert("táo hết rồi");
+            }
         }
 
 
