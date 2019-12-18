@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cbb1bc7f-bf40-4145-9b24-615998d348b7" name="Default Changelist" comment="21/11/2019">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Huong-Doi-Tuong/Den_Pin.html" beforeDir="false" afterPath="$PROJECT_DIR$/Huong-Doi-Tuong/Den_Pin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Huong-Doi-Tuong/Funny_Circles.html" beforeDir="false" afterPath="$PROJECT_DIR$/Huong-Doi-Tuong/Funny_Circles.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Huong-Doi-Tuong/canvas-Hinh_Chu_Nhat.html" beforeDir="false" afterPath="$PROJECT_DIR$/Huong-Doi-Tuong/canvas-Hinh_Chu_Nhat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Huong-Doi-Tuong/game_Adam_Eva.html" beforeDir="false" afterPath="$PROJECT_DIR$/Huong-Doi-Tuong/game_Adam_Eva.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Huong-Doi-Tuong/js_Adam_Eva.js" beforeDir="false" afterPath="$PROJECT_DIR$/Huong-Doi-Tuong/js_Adam_Eva.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +12,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -42,6 +37,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\TOAN\WebstormProjects\johntoan\trang_Web_Ban_Hang\js" />
+      <recent name="C:\Users\TOAN\WebstormProjects\johntoan\trang_Web_Ban_Hang\css" />
+      <recent name="C:\Users\TOAN\WebstormProjects\johntoan\trang_Web_Ban_Hang" />
+      <recent name="C:\Users\TOAN\WebstormProjects\johntoan\trang_Web_Ban_Hang\images" />
       <recent name="C:\Users\TOAN\WebstormProjects\johntoan\mang\baitapmang" />
     </key>
   </component>
@@ -126,6 +125,12 @@
       <workItem from="1576123184066" duration="3193000" />
       <workItem from="1576132789200" duration="879000" />
       <workItem from="1576135470340" duration="6374000" />
+      <workItem from="1576203310556" duration="5084000" />
+      <workItem from="1576413550451" duration="776000" />
+      <workItem from="1576458409587" duration="24576000" />
+      <workItem from="1576544966338" duration="12959000" />
+      <workItem from="1576564625643" duration="4918000" />
+      <workItem from="1576630221820" duration="8306000" />
     </task>
     <task id="LOCAL-00001" summary="bài tập mới">
       <created>1574328104034</created>
@@ -175,6 +180,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="21/11/2019" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="735" y="166" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576206482850">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="735" y="166" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1576206482850" />
     <state x="279" y="57" key="SettingsEditor" timestamp="1575879886847">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

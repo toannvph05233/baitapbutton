@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jsClass_News.js"></script>
+    <script src="js/jsMang.js"></script>
+    <script src="js/jsSlide_Show.js"></script>
+</head>
+<body>
+<div id="banner">
+
+    <img src="images/phongkhach.jpg" id="slide" height="350" width="1000"/>
+</div>
+
+<div id="menu">
+    <ul>
+        <li><a href="" title="Trang Chủ">Trang Chủ</a></li>
+        <li><a href="" title="Sản Phẩm">Sản Phẩm</a>
+            <ul>
+                <li><a href="" title="Bàn Ghế">Bàn Ghế</a></li>
+                <li><a href="" title="Giường">Giường</a></li>
+                <li><a href="" title="Tủ Quần Áo">Tủ Quần Áo</a></li>
+            </ul>
+        </li>
+
+        <li><a href="" title="Sản Phẩm Hot">Sản Phẩm Hot</a></li>
+        <li><a href="" title="Sản Phẩm Sale">Sản Phẩm Sale</a></li>
+        <li><a href="" title="Tin Tức">Tin Tức</a></li>
+        <li><a href="" title="Giỏ Hàng">Giỏ Hàng</a></li>
+
+    </ul>
+    <div id="search">
+        Tìm kiếm :
+        <input type="text">
+        <button onclick="tim_kiem()" id="btt_search">search</button>
+    </div>
+</div>
+
+
+<div id="main">
+    <div id="left">
+            <div id="more_display"></div>
+        <a href="More_New_Tittle.html">Thêm tin</a>
+
+    </div>
+    <div id="right">
+        <br><br><br><br>
+        <img src="images/icon/privacy_1_image.png" height="23" width="29"/><br><br>
+        Miễn phí vận chuyển đơn hàng <br>trên 10.000.000đ cho 5 quận Hà Nội <br><br><hr><br><br>
+        <img src="images/icon/privacy_2_image.png" height="30" width="29"/><br><br>
+        Giao hàng ngay sau khi đặt hàng<br> (áp dụng với Hà Nội )<br><br><hr><br><br>
+        <img src="images/icon/privacy_3_image.png" height="23" width="30"/><br><br>
+        Đổi trả trong 3 ngày, thủ tục<br> đơn giản<br><br><hr><br><br>
+        <img src="images/icon/privacy_4_image.png" height="32" width="26"/><br><br>
+        Nhà cung cấp xuất hóa đơn cho <br>sản phẩm này<br><br><hr>
+
+        </div>
+</div>
+
+
+<div id="footer">
+    Nguyễn Văn Toàn@
+</div>
+
+
+<script>
+    changeImg();
+    document.getElementById("more_display").innerHTML = hienthimang();
+    let news = new News();
+
+</script>
+
+
+</body>
+</html>

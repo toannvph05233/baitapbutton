@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cau4</title>
+</head>
+<body>
+<canvas id="hienthi" width="500" height="500"></canvas>
+<script>
+
+    function Rectangle(x, y, height, width, color) {
+        this.x = x;
+        this.y = y;
+        this.height = height;
+        this.width = width;
+        this.color = color;
+
+        this.render = function () {
+            let canvas = document.getElementById("hienthi");
+            let context = canvas.getContext("2d");
+            context.fillStyle = this.color;
+            context.fillRect(this.x, this.y, this.height, this.width);
+            context.fill();
+        }
+    }
+
+    let rectangle = new Rectangle(10, 10, 200, 100, "#58FA58");
+    rectangle.render();
+
+</script>
+</body>
+</html>

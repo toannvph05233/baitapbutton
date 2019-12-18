@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra SNT</title>
+</head>
+<body>
+
+<script>
+    function kiemTraSNT(n) {
+        if (n > 1) {
+            for (let i = 2; i < n; i++) {
+                if (n % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function isPrime(num) {
+        if (kiemTraSNT(num)) {
+            alert(num + " la SNT ");
+        } else {
+            alert(num + " khong la SNT");
+        }
+    }
+
+    isPrime(0);
+
+</script>
+</body>
+</html>

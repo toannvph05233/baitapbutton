@@ -1,0 +1,113 @@
+
+body {
+    font-size: 13px;
+    height: 100%;
+    width: 1000px;
+    margin: 0px auto;
+    background: #f2ffe5;
+}
+
+#menu {
+    background: #ff7d30;
+    height: 40px;
+}
+
+#banner {
+    height: 350px;
+    width: 1000px;
+}
+
+#main #left {
+    height: 1800px;
+    width: 700px;
+    float: left;
+
+
+}
+#main {
+    width: 1000px;
+    font-size: 14px;
+    height: auto;
+    height: 1800px;
+
+
+}
+
+#main #right {
+    height: 1800px;
+    width: 300px;
+    float: right;
+    text-align:center ;
+    background: #fdffca;
+
+}
+
+#footer {
+    background: #ff7d30;
+    width: 1000px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #f1f1f1;
+    font-size: 16px;
+
+}
+
+#menu ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu ul li {
+    list-style: none;
+    float: left;
+}
+
+#menu ul li a {
+    position: relative;
+    text-decoration: none;
+    line-height: 40px;
+    padding: 0px 15px 0px 15px;
+    border-right: 1px solid #d3d3d3;
+}
+
+#menu #search {
+    float: right;
+    line-height: 40px;
+    padding-right: 15px;
+}
+
+#main #left ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main #left ul {
+    list-style: none;
+    float: left;
+}
+
+#main #left ul li img {
+    float: left;
+    clear: left;
+    margin-right: 10px;
+}
+
+#main #left ul li {
+    border-bottom: 1px solid #111111;
+    list-style: none;
+}
+
+#menu ul li ul {
+    position: absolute;
+    background: #ff7d30;
+    display: none;
+}
+
+#menu ul li:hover ul {
+    display: block;
+}
+
+#menu ul li:hover {
+    background: #2dff1a;
+}
