@@ -33,30 +33,37 @@
     </ul>
     <div id="search">
         Tìm kiếm :
-        <input type="text">
-        <button onclick="tim_kiem()" id="btt_search">search</button>
+        <input id="btt_search" type="text">
+        <button onclick="tim_kiem()">search</button>
     </div>
 </div>
 
 
 <div id="main">
     <div id="left">
-            <div id="more_display"></div>
+        <div id="hienthi"></div>
         <a href="More_New_Tittle.html">Thêm tin</a>
 
     </div>
     <div id="right">
         <br><br><br><br>
         <img src="images/icon/privacy_1_image.png" height="23" width="29"/><br><br>
-        Miễn phí vận chuyển đơn hàng <br>trên 10.000.000đ cho 5 quận Hà Nội <br><br><hr><br><br>
+        Miễn phí vận chuyển đơn hàng <br>trên 10.000.000đ cho 5 quận Hà Nội <br><br>
+        <hr>
+        <br><br>
         <img src="images/icon/privacy_2_image.png" height="30" width="29"/><br><br>
-        Giao hàng ngay sau khi đặt hàng<br> (áp dụng với Hà Nội )<br><br><hr><br><br>
+        Giao hàng ngay sau khi đặt hàng<br> (áp dụng với Hà Nội )<br><br>
+        <hr>
+        <br><br>
         <img src="images/icon/privacy_3_image.png" height="23" width="30"/><br><br>
-        Đổi trả trong 3 ngày, thủ tục<br> đơn giản<br><br><hr><br><br>
+        Đổi trả trong 3 ngày, thủ tục<br> đơn giản<br><br>
+        <hr>
+        <br><br>
         <img src="images/icon/privacy_4_image.png" height="32" width="26"/><br><br>
-        Nhà cung cấp xuất hóa đơn cho <br>sản phẩm này<br><br><hr>
+        Nhà cung cấp xuất hóa đơn cho <br>sản phẩm này<br><br>
+        <hr>
 
-        </div>
+    </div>
 </div>
 
 
@@ -67,8 +74,7 @@
 
 <script>
     changeImg();
-    document.getElementById("more_display").innerHTML = hienthimang();
-    let news = new News();
+    document.getElementById("hienthi").innerHTML = hienthimang();
 
 </script>
 

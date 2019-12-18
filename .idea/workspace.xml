@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="cbb1bc7f-bf40-4145-9b24-615998d348b7" name="Default Changelist" comment="21/11/2019">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trang_Web_Ban_Hang/More_New_Tittle.html" beforeDir="false" afterPath="$PROJECT_DIR$/trang_Web_Ban_Hang/More_New_Tittle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trang_Web_Ban_Hang/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/trang_Web_Ban_Hang/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trang_Web_Ban_Hang/js/jsMang.js" beforeDir="false" afterPath="$PROJECT_DIR$/trang_Web_Ban_Hang/js/jsMang.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trang_Web_Ban_Hang/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/trang_Web_Ban_Hang/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,9 +16,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -130,7 +134,8 @@
       <workItem from="1576458409587" duration="24576000" />
       <workItem from="1576544966338" duration="12959000" />
       <workItem from="1576564625643" duration="4918000" />
-      <workItem from="1576630221820" duration="8306000" />
+      <workItem from="1576630221820" duration="11514000" />
+      <workItem from="1576650854028" duration="5251000" />
     </task>
     <task id="LOCAL-00001" summary="bài tập mới">
       <created>1574328104034</created>
