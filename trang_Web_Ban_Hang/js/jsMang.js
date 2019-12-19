@@ -51,7 +51,7 @@ function hienthimang() {
         if (arr[i] != undefined) {
             str += "<li>";
             str += "<img src=" + arr[i][0] + " height=\"150\" width=\"170\">"
-                + "<h2>" + arr[i][1] + "</h2>" + arr[i][2] + "<br><br>" + arr[i][3] + "<br><br>"
+                + "<h2><a href='san_pham1.html'>" + arr[i][1] + "</a></h2>" + arr[i][2] + "<br><br>" + arr[i][3] + "<br><br>"
                 + arr[i][4] + "<br><br>";
             str += "</li>";
         } else {
@@ -112,8 +112,9 @@ function tim_kiem_vi_tri() {
                 return i + 1;
             }
         }
-        return false;
+
     }
+    return false;
 }
 
 function hienthimangtimkiem(a) {
@@ -128,12 +129,30 @@ function hienthimangtimkiem(a) {
 
 function tim_kiem() {
     let timkiem = tim_kiem_vi_tri();
-    alert(timkiem);
     if (timkiem != false) {
-        alert(timkiem);
         document.getElementById("hienthi").innerHTML = hienthimangtimkiem(parseInt(timkiem) - 1);
     } else {
         alert("không tìm kiếm được! ")
     }
+}
+
+function hien_thi_gio_hang() {
+    let str2 = "<table>\n" +
+        "<tr>\n" +
+        "<th>Tên sản phẩm</th>\n" +
+        "<th>Giá sản phẩm</th>\n" +
+        "<th>thông tin sản phẩm</th>\n" +
+        "<th>ảnh sản phẩm</th>\n" +
+        "<th>Xóa</th>\n" +
+        "</tr>\n" +
+        "<div id=\"bang_gio_hang\"></div>\n" +
+        "<tr>" +
+        "<td>" + arr[0][1] + "</td>" +
+        "<td>" + arr[0][2] + "</td>" +
+        "<td>" + arr[0][4] + "</td>" +
+        "<td><img src=\"" + arr[0][0]+"\"height='100' width='100'>" + "</td>" +
+        "<td><button>Xóa</button></td>\n" +
+        "</tr>  </table>";
+    return str2;
 }
 

@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jsClass_News.js"></script>
     <script src="js/jsMang.js"></script>
     <script src="js/jsSlide_Show.js"></script>
+    <style>
+
+        #main #left table tr td {
+            border: 1px solid;
+        }
+
+        #main #left table {
+            border: 1px solid;
+            text-align: center;
+            font-size: 16px;
+        }
+        #main #left th{
+            border: 1px solid;
+        }
+    </style>
+
 </head>
 <body>
 <div id="banner">
@@ -28,7 +45,7 @@
         <li><a href="san_pham1.html" title="Sản Phẩm Hot">Sản Phẩm Hot</a></li>
         <li><a href="san_pham1.html" title="Sản Phẩm Sale">Sản Phẩm Sale</a></li>
         <li><a href="" title="Tin Tức">Tin Tức</a></li>
-        <li><a href="gio_hang.html" title="Giỏ Hàng">Giỏ Hàng</a></li>
+        <li><a href="" title="Giỏ Hàng">Giỏ Hàng</a></li>
 
     </ul>
     <div id="search">
@@ -41,8 +58,14 @@
 
 <div id="main">
     <div id="left">
-        <div id="hienthi"></div>
-        <a href="More_New_Tittle.html">Thêm tin</a>
+
+        <br><br>
+        <h1>Giỏ hàng của bạn</h1>
+            <div id="bang_gio_hang"></div>
+        <br>
+        <br>
+
+
 
     </div>
     <div id="right">
@@ -74,8 +97,7 @@
 
 <script>
     changeImg();
-    document.getElementById("hienthi").innerHTML = hienthimang();
-
+    document.getElementById("bang_gio_hang").innerHTML = hien_thi_gio_hang();
 </script>
 
 
